@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.weather-header {
+    width: 100%;
+    background-color: navy;
+    height: 100px;
+}
+
+.weather-header h1 {
+    justify-content: center;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: ;
+    color: white;
+    font-family: roboto;
+}
