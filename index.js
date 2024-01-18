@@ -10,6 +10,7 @@ let searchButton = $("#search-button");
 let clearSearch = $("#clear-search");
 let currentCity = $("#current-city");
 let currentTemperature = $("#current-temperature")
+let 
 
 
 
