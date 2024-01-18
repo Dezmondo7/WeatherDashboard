@@ -9,8 +9,28 @@ let searchCity = $("#search-input");
 let searchButton = $("#search-button");
 let clearSearch = $("#clear-search");
 let currentCity = $("#current-city");
-let currentTemperature = $("#current-temperature")
-let 
+let currentTemperature = $("#temperature");
+let currentWindspeed = $("#wind-speed");
+let currentHumidity = $("#humidity");
+let savedCity = [];
 
+//Function to find the City from the search box
+function find(c) {
+    for (var i=0; i < savedCity.length; i++) {
+        if (c.toUpperCase() === savedCity[i]) {
+            return -1;
+        }
+    }
+    return 1;
+};
 
+//Funciton to display the weather 
+function displayWeather(event) {
+    event.preventDefault();
+    if(searchCity.val().trim()!=="") {
+        city=searchCity.val().trim();
+        currentWeather(city);
+    }
+}
 
+//Create AJAX call
