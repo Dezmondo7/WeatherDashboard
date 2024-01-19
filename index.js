@@ -43,3 +43,22 @@ function currentWeather(city) {
 
         console.log(response);
     }
+
+//Get Weather Icon
+    let weatherIcon = response.weather[0].icon;
+    let iconURL = "https://openweathermap.org/img/wn/"+ weathericon +"@2x.png";
+
+
+//Get the date and parse the temp and 
+
+//Dsiplay the 5 day forcast for the current city searched
+
+//add the past searches dynamically to the search list
+
+//display search when a previous search is clicked
+
+//Render function
+
+//clear search history from page
+
+//click events
