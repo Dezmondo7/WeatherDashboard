@@ -2,7 +2,7 @@
 const APIKey = "98fcbdcfb0b3d080b76818012068c994";
 
 //Variable to store the searched City
-let City = "";
+let city = "";
 
 //list of variables to be defined
 let searchCity = $("#search-input");
@@ -34,3 +34,12 @@ function displayWeather(event) {
 }
 
 //Create AJAX call
+function currentWeather(city) {
+    let queryURL =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}`;
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }) .then(function(response) {
+
+        console.log(response);
+    }
